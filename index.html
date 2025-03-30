@@ -3,6 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --gray-color: #95a5a6;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 25px;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        h3 {
+            color: var(--dark-color);
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+        
+        p, li {
+            color: var(--dark-color);
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0), var(--secondary-color), rgba(0,0,0,0));
+            margin: 30px 0;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        li:before {
+            content: "•";
+            color: var(--secondary-color);
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        
+        b {
+            color: var(--primary-color);
+        }
+        
+        small {
+            color: var(--gray-color);
+            font-style: italic;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info li:before {
+            content: none;
+        }
+        
+        .contact-info li {
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info li:first-child:before {
+            content: "📱";
+            position: absolute;
+            left: 0;
+        }
+        
+        .contact-info li:nth-child(2):before {
+            content: "✉";
+            position: absolute;
+            left: 0;
+        }
+        
+        .contact-info li:nth-child(3):before {
+            content: "📌";
+            position: absolute;
+            left: 0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
     <title>CV Duarte Federico</title>
 </head>
 <body>
